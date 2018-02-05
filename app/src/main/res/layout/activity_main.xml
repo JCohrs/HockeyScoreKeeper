@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.hockeyscorekeeper.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@+id/horizontalLine"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/teamA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="@string/teamA"
+            android:textColor="#616161"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/teamAScore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="@string/score"
+            android:textColor="#000000"
+            android:textSize="56sp" />
+
+        <Button
+            android:id="@+id/goal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:layout_marginStart="24dp"
+            android:onClick="addGoalA"
+            android:text="@string/goal"
+            android:textAllCaps="true" />
+
+        <TextView
+            android:id="@+id/sogA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="52dp"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="@string/shotsOnGoal"
+            android:textAllCaps="true"
+            android:textColor="#616161"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/numSOGA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="@string/score"
+            android:textColor="#000000"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/btnSOGA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="addSOGA"
+            android:text="@string/sogBTN"
+            android:textAllCaps="true" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/horizontalLine"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout2"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout1"
+        app:layout_constraintTop_toTopOf="parent"></View>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/horizontalLine">
+
+        <TextView
+            android:id="@+id/teamB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="@string/teamB"
+            android:textColor="#616161"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/teamBScore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="@string/score"
+            android:textColor="#000000"
+            android:textSize="56sp" />
+
+        <Button
+            android:id="@+id/threeB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:layout_marginStart="24dp"
+            android:onClick="addGoalB"
+            android:text="@string/goal"
+            android:textAllCaps="true" />
+
+        <TextView
+            android:id="@+id/sogB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="52dp"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="@string/shotsOnGoal"
+            android:textAllCaps="true"
+            android:textColor="#616161"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/numSOGB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="@string/score"
+            android:textColor="#000000"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/btnSOGB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="addSOGB"
+            android:text="@string/sogBTN"
+            android:textAllCaps="true" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:onClick="resetScore"
+        android:text="@string/resetScores"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

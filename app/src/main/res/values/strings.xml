@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Hockey Score Keeper</string>
+    <string name="teamA">Team A</string>
+    <string name="score">0</string>
+    <string name="goal">goal</string>
+    <string name="resetScores">reset</string>
+    <string name="teamB">Team B</string>
+    <string name="shotsOnGoal">shots on goal</string>
+    <string name="sogBTN">shot on goal</string>
+</resources>
