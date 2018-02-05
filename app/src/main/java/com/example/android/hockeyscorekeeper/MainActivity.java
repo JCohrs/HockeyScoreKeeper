@@ -78,8 +78,8 @@ public class MainActivity extends AppCompatActivity {
     public void resetScore(View view) {
         scoreA = 0;
         scoreB = 0;
-        sogA=0;
-        sogB=0;
+        sogA = 0;
+        sogB = 0;
         displayForTeamA(scoreA);
         displaySogForTeamA(sogA);
         displayForTeamB(scoreB);
@@ -88,19 +88,21 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Increase shots on goal for team A
+     *
      * @param view
      */
     public void addSOGA(View view) {
-        sogA +=1;
+        sogA += 1;
         displaySogForTeamA(sogA);
     }
 
     /**
      * Increase shots on goal for team B
+     *
      * @param view
      */
     public void addSOGB(View view) {
-        sogB +=1;
+        sogB += 1;
         displaySogForTeamB(sogB);
     }
 }
